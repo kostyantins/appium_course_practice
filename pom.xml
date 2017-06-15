@@ -22,16 +22,16 @@
                 <version>2.19.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/resources/suites/${suite}.xml</suiteXmlFile>
+                        <suiteXmlFile>src/resources/suites/smoke.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <property>
-                            <name>usedefaultlisteners</name>
+                            <name>usedefaultlistener</name>
                             <value>true</value>
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>src.test.java.util.TestListener</value>
+                            <value>util.TestListener</value>
                         </property>
                     </properties>
                 </configuration>

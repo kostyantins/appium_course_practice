@@ -1,0 +1,31 @@
+
+<suite name="Parallel test" verbose="1" parallel="tests" thread-count="2">
+
+    <test name="Tweeter test">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="46"/>
+        //
+        //
+        //
+        <classes>
+            <class name="tests.TwitterTest">
+                <methods>
+                    <include name="test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Google test Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="43"/>
+        <classes>
+            <class name="tests.TwitterTest">
+                <methods>
+                    <include name="test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

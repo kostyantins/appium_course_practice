@@ -3,7 +3,7 @@
 <suite name="Smoke Suite">
     <test name="Smoke Tests">
         <classes>
-            <class name="tests.GoogleTest"/>
-        </classes>
+            <class name="tests.GoogleLogoExistTest"/>
+    </classes>
     </test>
 </suite>
